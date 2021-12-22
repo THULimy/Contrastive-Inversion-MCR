@@ -1,8 +1,8 @@
 # Using MCR on this task.
 Codes are modified on the project below.
 
-```python noisy_clip_dataparallel_mcr.py --config_file config/NoisyRN101_mcr/sample.yaml```: Trains a CLIP model using contrastive learning.
-```python noisy_clip_dataparallel_mcr_imagenet5.py --config_file config/NoisyRN101_mcr_imagenet5/sample.yaml```: Trains a CLIP model using contrastive learning.
+- ```python noisy_clip_dataparallel_mcr.py --config_file config/NoisyRN101_mcr/sample.yaml```: Trains a CLIP model using contrastive learning.
+- ```python noisy_clip_dataparallel_mcr_imagenet5.py --config_file config/NoisyRN101_mcr_imagenet5/sample.yaml```: Trains a CLIP model using contrastive learning.
 
 # Inverse Problems Leveraging Pre-trained Contrastive Representations
 
