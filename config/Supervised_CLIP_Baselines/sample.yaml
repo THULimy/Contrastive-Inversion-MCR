@@ -2,7 +2,7 @@
 seed: 1234
 
 #data
-dataset_dir: "/tmp/ImageNet100/"
+dataset_dir: "./ImageNet100/"
 dataset: "ImageNet100"
 num_classes: 100
 
@@ -35,7 +35,7 @@ batch_size: 16
 #logging
 log_save_interval: 1 #set this to be equal to num_epochs if row_log_interval is 1
 row_log_interval: 1
-logdir: "/tmp/Logs"
+logdir: "./Logs"
 
 #validation
 check_val_every_n_epoch: 1

@@ -2,10 +2,10 @@
 seed: 1234
 
 #data 
-dataset_dir: "./ImageNet100"
-dataset: "ImageNet100"
-subset_file_name: "imagenet100.txt"
-num_classes: 100
+dataset_dir: "./ImageNet5"
+dataset: "ImageNet5"
+subset_file_name: "imagenet5.txt"
+num_classes: 5
 emb_dim: 512
 
 #distributed training 
@@ -23,7 +23,7 @@ experiment_name: "sample_student"
 encoder: "clip"
 baseclip_type: "RN101"
 device: "cpu" #Original device where baseclip is loaded
-loss_type: "simclr" #can also be mse
+loss_type: "mcr" #can also be mse
 
 distortion: "randommask" #randommask/gaussiannoise/gaussianblur/squaremask
 fixed_mask: False
@@ -31,11 +31,11 @@ percent_missing: 0.9 #only for randommask - can be float from 0 to 1 for set num
 
 lr: 0.0003
 weight_decay: 0.0001
-batch_size: 16
-loss_tau: 0.1 #tau parameter for our loss
-logit_scale: 0.07 #logit scale for zeroshot - inherited from original CLIP
+batch_size: 128
+loss_tau: 0.1 #tau parameter for our loss # not use
+logit_scale: 0.07 #logit scale for zeroshot - inherited from original CLIP # not use
 
-mapping_and_text_file: "./mapping_text_labels_imagenet100.pkl" #Save text labels of dataset for reuse.
+mapping_and_text_file: "./mapping_text_labels_imagenet5_ours.pkl" #Save text labels of dataset for reuse.
 save_mapping_and_text: True
 
 #training
